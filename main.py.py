@@ -1,10 +1,12 @@
 import asyncio
+import os
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 from deep_translator import GoogleTranslator
 
-TOKEN = "8582036263:AAFrSLwNrNHXUgVJxJzhVHFwemqFNISXFWI"
+TOKEN = os.getenv("8582036263:AAFrSLwNrNHXUgVJxJzhVHFwemqFNISXFWI")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
